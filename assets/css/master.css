@@ -46,17 +46,18 @@ nav>ul{
   text-transform:uppercase;
   font-weight: bold;
   border-radius: 10px;
-  border: 1px solid;
+  /* border: 1px solid; */
   display: block;
   padding: .6em;
-  color: #FF2D00;
-  background-color:#A4CFBE;
+  color: #fff;
+  background-color:#781205;
   transition: .5s;
 }
 .responsive-nav>li>a.download-button{
   background: #fff;
   border: none;
   box-shadow: 0 12px 10px -5px rgba(0,0,0,.4);
+  color: blue;
 }
 .responsive-nav>li>a:hover{
   color: #f7e4ce;
