@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <!--
+
+<head>
+  <!--
       date: 08.06.2018
       created by : Ion Pulbere
       porpose : to create a responseve nav bar;
     -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalizer.css">
-    <link rel="stylesheet" href="css/master.css">
-    <title>Responsive Navigation</title>
-  </head>
-  <body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/normalizer.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <title>Responsive Navigation</title>
+</head>
+
+<body>
+  <div class="wrapper">
     <header>
 
     </header>
     <nav>
-      <div class="re">
-        <ul>
-          <li>test</li>
-          <li>sa</li>
-        </ul>
-      </div>
+      <ul id="responsive-nav" class="responsive-nav">
+        <li> <a href="#"> features</a> </li>
+        <li> <a href="#"> press</a> </li>
+        <li><a href="#" class="download-button">download</a> </li>
+      </ul>
+      <ul class="nav-toggle">
+      <li> <a href="#" id="a-toggle"> <img src="assets/img/icon-menu.png" alt="IconMenu"> </a>  </li>
+      </ul>
     </nav>
     <main>
 
@@ -30,5 +35,8 @@
     <footer>
 
     </footer>
-  </body>
+  </div>
+  <script src="assets/js/run.js"> </script>
+</body>
+
 </html>

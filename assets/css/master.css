@@ -1,264 +1,90 @@
 html{
 background-color: #E5E1C4;
-
 }
-body{
-  margin: 0;
-  padding: 0;
-}
-.bg{
-  position: relative;
-  background: #E5E1C4 url(../img/street.jpg) repeat-x;
-  background-size: contain;
-  height: 400px;
-  }
-/* .wrapper{
+.wrapper{
   max-width: 80rem;
-  width: 90%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 1em auto ;
+}
+nav{
+  /* border: 1px solid; */
 
+  display: flex;
+  justify-content: flex-end;
+}
+.responsive-nav{
+  /* border: 1px solid red; */
+  margin-top: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-toggle{
+  /* border: 1px solid green; */
+}
+nav>ul{
+  list-style: none;
+  padding-left: 0;
+  padding-right:  0;
+}
+.nav-toggle  img  {
+  display: block;
+  width: 80%;
+  margin:0 auto;
+
+}
+.nav-toggle{
+  display: none;
+}
+/* .nav-toggle a:hover {
+  background-color:#ffff;
+  z-index: 101;
 } */
-/* .air{
-
-} */
-.bodycar{
-  width:300px;
-  height: 100px;
-  border: 2px solid;
-  position: absolute;
-  border-radius: 15px;
-  background-color: #ff320c;
-  bottom:40px;
-  right:70%;
-  animation: movebus 15s linear 2s infinite  ;
-
-  /* transform: rotateX(20deg) rotateZ(-2deg);
-   transform-style: preserve-3d;
-  perspective: 50px;
-   perspective-origin: left; */
-   /* background-color: transparent; */
-   /* background-clip: text;
-   -webkit-background-clip: text; /* for chrome */
-
-
-}
-.wheel{
-  border: 3px solid #11365A ;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 2;
-  background-color:#9fa0b4;
-
-}
-.w1{
- bottom: -25px;
- left:25px;
- z-index: 3;
- animation: rotate .5s linear 2s infinite ;
-}
-.w2{
- bottom: -25px;
- right: 25px;
- z-index: 3;
- animation: rotate .5s linear 2s infinite ;
- }
-.line1{
-  position: relative;
-  border: 1px solid;
-  transform: rotate(90deg);
-  top: 21px;
-  color: #11365A;
-}
-.line2{
-
-  position: relative;
-  border: 1px solid;
-  top: 20px;
-  color: #11365A;
-}
-.windows{
-  width: 50px;
-  height: 30px;
-  border: 2px solid;
-  border-radius: 5px;
-  position: absolute;
-  background:url(../img/street.jpg) ;
-  /* background-repeat: no-repeat; */
-  background-size: contain;
-  background-attachment: fixed;
-  background-position: bottom;
-  /* background-color: transparent; */
-    /* z-index: -1; */
-  /* background-clip: text;
-  -webkit-background-clip: text; /* for chrome */
-  /* color: transparent; */
-
-}
-.window1{
-  top: 20px;
-  left: 30px;
-}
-.window2{
-  top: 20px;
-  left:  100px;
-}
-.window3{
-  top: 20px;
-  left:  170px;
-}
-.window4{
-  top: 20px;
-  right: -1px;
-  width: 70px;
-  height: 40px;
-
-}
-@keyframes rotate {
-  from{}
-    to{
-      transform: rotate(90deg);
-    }
-
-}
-@keyframes movebus {
-  /* from{right: 70%}
-    to{
-      right: 0%;
-    } */
-
-    0%{ right: 70% ;transform: rotateY(0deg); }
-    10%{ right: 65% ;transform: rotateY(0deg); }
-    20%{ right: 60% ;transform: rotateY(0deg); }
-    30%{ right: 40% ;transform: rotateY(0deg); }
-    40%{ right: 20% ;transform: rotateY(0deg); }
-    50%{ right: 0% ; transform: rotateY(180deg); transform-origin: bottom;}
-    60%{ right: 20% ;transform: rotateY(180deg); }
-    70%{ right: 40% ; transform: rotateY(180deg);}
-    80%{ right: 60% ; transform: rotateY(180deg);}
-    90%{ right: 65% ; transform: rotateY(180deg);}
-    100%{ right: 70% ;transform: rotateY(0deg); }
-
-
-}
-/*bulbs++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
-.bulb{
-  position: absolute;
-  border: 1px solid;
-  top: 3%;
-  width: 10px;
-  height: 10px;
-  z-index: 4;
-  border-radius: 50%;
-}
-.b-1{
-  left: 10%;
-
-  animation: bulbsred .5s linear infinite;
-}
-.b-2{
-  left: 20%;
-  animation: bulbyellow .3s linear infinite;
-
-
-}
-.b-3{
-  left: 30%;
-
-  animation: bulblue .5s linear infinite;
-
-}
-.b-4{
-  left: 40%;
-  animation: bulbsred .1s linear infinite;
-
-
-}
-.b-5{
-  left: 50%;
-  animation: bulbyellow .2s linear infinite;
-
-
-}
-.b-6{
-  left: 60%;
-  animation: bulblue .4s linear infinite;
-
-
-}
-.b-7{
-  left: 70%;
-  animation: bulbsred .5s linear infinite;
-
-}
-.b-8{
-  left: 80%;
-  animation: bulbyellow .1s linear infinite;
-
-}
-
-@keyframes bulbsred {
-  from{
-background-color: #fff;
-  }
-
-  to{
-    background-color: red;
-  }
-}
-@keyframes bulbyellow {
-  from{
-background-color: #fff;
-  }
-  to{
-    background-color: #87801F;
-  }
-}
-@keyframes bulblue{
-  from{
-background-color: #fff;
-  }
-
-  to{
-    background-color: blue;
-  }
-}
-/* text start +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-.start::before{
-  position: absolute;
-  color: red;
-  content: "";
-  z-index: 10;
-  top: -100px;
-  left: 80px;
-
-  font-size: 2em;
+.responsive-nav>li>a{
+  text-decoration:none;
+  text-transform:uppercase;
   font-weight: bold;
-  animation: starttext 2s ;
-  /* margin-left: auto;
-  margin-right: auto;
-  width: 90%; */
+  border-radius: 10px;
+  border: 1px solid;
+  display: block;
+  padding: .6em;
+  color: #FF2D00;
+  background-color:#A4CFBE;
+  transition: .5s;
+}
+.responsive-nav>li>a.download-button{
+  background: #fff;
+  border: none;
+  box-shadow: 0 12px 10px -5px rgba(0,0,0,.4);
+}
+.responsive-nav>li>a:hover{
+  color: #f7e4ce;
+  background-color:#FF2D00;
+}
+
+/*  reposive nav style*/
+@media only screen and (max-width: 750px){
+  .nav-toggle{
+    display: block;
+    z-index: 100;
   }
-  @keyframes starttext {
-    25%{
-      content: "<< One >>";
-      color: #48A506;
-    }
-    50%{
-      content: "<< Two >>";
-      color: #F2B708;
-
-    }
-    75%{
-      content: "<< Three >>";
-      color: #F66000;
-
-    }
-    100%{
-      content: "<< GO! >>";
-      color: red;
-
-    }
-
+  .responsive-nav{
+    display: none;
   }
+  .responsive-nav.unfold{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    background: #1f1f1f;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .responsive-nav.unfold>li{
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+}
