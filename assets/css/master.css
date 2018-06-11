@@ -57,7 +57,7 @@ nav>ul{
   background: #fff;
   border: none;
   box-shadow: 0 12px 10px -5px rgba(0,0,0,.4);
-  color: blue;
+  color: #FF2D00;
 }
 .responsive-nav>li>a:hover{
   color: #f7e4ce;
