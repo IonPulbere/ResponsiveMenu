@@ -11,12 +11,12 @@ toggle.addEventListener('click',function(e){
     e.preventDefault();
   shownav();
 },'false');
-// Prevent All ancor to folow the link============================
-var ancors= document.querySelectorAll('a');
-for(var i =0;i<ancors.length;i++){
-    ancors[i].addEventListener('click',function(e){
-    e.preventDefault();},
-    'false');
-}
+// // Prevent All ancor to folow the link============================
+// var ancors= document.querySelectorAll('a');
+// for(var i =0;i<ancors.length;i++){
+//     ancors[i].addEventListener('click',function(e){
+//     e.preventDefault();},
+//     'false');
+// }
 
 // ================================================================
